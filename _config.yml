@@ -9,8 +9,8 @@ avatarDesc: Android / FFmpeg
 url: "https://tristan-hou.github.io/"
 
 # Comment
-comment:
-    disqus: leopard
+#comment:
+    #disqus: leopard
     # uyan: 2143225  # 有言id,登录有言官网申请
 
 # Social
