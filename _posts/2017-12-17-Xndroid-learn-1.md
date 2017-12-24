@@ -15,7 +15,7 @@ tags: Android
 
 * 首先，直接sync会报错： 
 
-![](/images/posts/xndroid/xndroid-shrinker-error.jpg)
+![](https://raw.githubusercontent.com/Tristan-Hou/MarkdownImg/master/res/xndroid-shrinker-error.jpg)
 >Error:Resource shrinker cannot be used for libraries.
 
 原因是library中使用了混淆，并移除了无用的资源文件，解决办法就是把该library中的`shrinkResources`字段移除——按理说这个字段应该加上，但没想到其他更好的办法，暂时移除吧。 
@@ -24,7 +24,7 @@ tags: Android
 
 * 随后开始编译，编译失败：
 
-![](/images/posts/xndroid/xndroid-compileNdk.jpg)
+![](https://raw.githubusercontent.com/Tristan-Hou/MarkdownImg/master/res/xndroid-compileNdk.jpg)
 >:app:ompileDebugNdk
 
 根据提示，我们可以知道这是由于`gradle.properties`文件中使用了`useDeprecatedNdk`，而这个东西已经“no longer supported and will removed in the next version”。所以我们有两个解决办法：
@@ -136,7 +136,7 @@ tags: Android
 至于他说的`native-lib.cpp`，我们不需要。
 
 3. 编译，成功。
-![](/images/posts/xndroid/xndroid-compile-success.jpg)
+![](https://raw.githubusercontent.com/Tristan-Hou/MarkdownImg/master/res/xndroid-compile-success.jpg)
 
 ##总结
 刚开始接触NDK，很多东西都不懂，因此这么一个小小的编译，都浪费了许多时间。
